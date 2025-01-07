@@ -60,5 +60,10 @@
 [init]
   defaultBranch = master
 [user]
-	email = nynor@nfpires.com
-	name = Nynor Pires
+	email = nonopires@googlemail.com
+	name = Nynor
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
